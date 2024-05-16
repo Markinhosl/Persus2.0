@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--body);
+    font-family: "Open Sans", sans-serif;
+    width: 100% !important;
+    background-image: url(../imagem/fundo5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.preferencias {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    width: 100%;
+    height: 45px;
+    background: #cbd9ea;
+    border-radius: 3px;
+    justify-content: flex-start;
+    text-align: justify;
+}
+
+.h1domarcao {
+    text-align: center;
+    border-radius: 3px;
+    font-size: large;
+    color: white;
+
+}
+
+.titulo {
+    padding-left: 10px;
+    width: 100%;
+    margin-top: 3px;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.card {
+    max-width: 100% !important;
+    max-height: auto;
+}
+
+h3 {
+    font-size: 90% !important;
+}
+
+.plano {
+    margin: 0px 0px 10px;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 15px;
+    width: 100%;
+    margin-top: 1%;
+    max-height: 65px;
+}
+
+button {
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.sumir {
+    visibility: hidden !important;
+
+}
+
+.aparecer {
+    visibility: visible;
+}
+
+@media print {
+
+
+    body * {
+        visibility: hidden;
+    }
+
+    body {
+        background: transparent;
+    }
+
+    #printable,
+    #printable * {
+        visibility: visible;
+        /* border: none !important; */
+
+    }
+
+    .card-body {
+        margin-top: -16px;
+        margin-bottom: -3px;
+
+    }
+
+    .container {
+        margin: 0px;
+        max-width: 2480px !important;
+
+    }
+
+    .sumirPrint {
+
+        /*  visibility: hidden !important; */
+        display: none !important;
+
+    }
+
+    h1 {
+        visibility: hidden !important;
+    }
+
+    .emLinha {
+        display: flex !important;
+        flex-direction: row !important;
+        width: 100%;
+        margin-left: 1% !important;
+        padding-bottom: 10px !important;
+        font-size: 10px;
+    }
+
+    textarea {
+        border: none !important;
+    }
+
+    .emLinha1 {
+        display: flex !important;
+        flex-direction: row !important;
+        /* justify-content: space-evenly */
+    }
+
+    .form-label {
+        margin-right: 1% !important;
+        font-size: 10px !important;
+        margin-top: 5px !important;
+    }
+
+    .form-check-input {
+        margin-right: 1% !important;
+        font-size: 20px;
+        display: none !important;
+    }
+
+    .form-check-label {
+        margin-right: 1% !important;
+        padding-top: 5px !important;
+    }
+
+    .input {
+        border: none !important;
+        margin-left: 0px !important;
+        margin-left: 0px !important;
+        margin-right: 5px !important;
+        font-size: 10px !important;
+    }
+
+    .form-check {
+        font-size: 10px !important;
+        width: 100% !important;
+    }
+
+    .h1domarcao {
+        visibility: visible !important;
+        font-size: small;
+    }
+
+    ::placeholder {
+        font-size: 13px !important;
+        margin-bottom: 10px;
+    }
+
+    .form-control {
+        visibility: none !important;
+        border: none !important;
+    }
+
+    .form-select {
+        border: none !important;
+    }
+
+    .input[type="text"] {
+        padding-right: 5px !important;
+        margin-left: 5px !important;
+    }
+
+    #motivoselect {
+        width: 75% !important;
+        height: 40px !important;
+        text-align: justify !important;
+        font-size: 10px !important;
+
+    }
+
+    .label {
+        margin-top: 3px !important;
+    }
+
+    #nome-box2 {
+        width: 60px;
+    }
+
+    .data {
+        font-size: 10px !important;
+    }
+
+}
+
+input[type="date"] {
+    display: flex;
+    margin-left: auto;
+    margin-top: 15px;
+    border-radius: 3px;
+    border: none;
+}
+
+#motivo {
+    height: 60px !important;
+    font-size: 10px !important;
+
+}
+
+#preliminares,
+#preliminares1,
+#preliminares2 {
+    font-size: 10px !important;
+    height: 50px !important;
+}
+
+
+.emLinha {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100%;
+    margin-bottom: 5px !important;
+}
+
+.nome-box {
+    font-size: 13px !important;
+    width: 190px !important;
+
+
+}
+
+#nome-boxvalor {
+    width: 65px;
+}
+
+#nome-box2 {
+    width: 65px !important;
+}
+
+
+.label {
+    padding-right: 0px;
+    margin-left: 5px;
+    height: 100%;
+    margin-right: 5px;
+}
+
+.card data {
+    display: flex !important;
+    justify-content: end !important;
+}
+
+::placeholder {
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+.form-select-lg {
+    width: 60% !important;
+    height: 40px;
+    text-align: justify;
+    font-size: 13px !important;
+    padding-left: 5px !important;
+}
+
+.input {
+    border-radius: 3px;
+    border-color: #a4a6a7;
+    padding: 1px;
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+.colbuton {
+    display: flex;
+    margin-bottom: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.form-control {
+    border-color: black !important;
+    height: 0px;
+    padding-left: 5px !important;
+}
+
+.form-label {
+    padding-left: 0px !important;
+}
+
+.form-check-input {
+    margin-left: 5px !important;
+
+}
+
+.form-check-label {
+    margin-right: 3px !important;
+    margin-left: 5px !important;
+}
+
+.form-check {
+    padding-left: 0% !important;
+}
+
+#btnimprimir {
+    margin: 10px;
+    background-color: #0d6efd;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#btnimprimir2 {
+    margin: 10px;
+    background-color: #05a710;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
